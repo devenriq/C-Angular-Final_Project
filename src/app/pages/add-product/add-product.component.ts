@@ -20,8 +20,11 @@ export class AddProductComponent implements OnInit{
     private router:Router
   ){
     this.formProduct = new FormGroup({
-      email:new FormControl(),
-      password: new FormControl()
+      name:new FormControl(),
+      description:new FormControl(),
+      price:new FormControl(),
+      photo:new FormControl(),
+      sale:new FormControl(),
     })
   }
 

@@ -1,16 +1,20 @@
 <div
-  class="bg-background text-color w-screen h-16 flex justify-between items-center text-lg"
+  class="bg-background w-screen h-16 flex justify-between items-center text-dm"
 >
   <ol class="flex items-center">
     <li>
-      <a class="hover:text-color-hover pl-12" routerLink="home">Inicio </a>
+      <a class="hover:text-color-hover pl-12 text-color" routerLink="home"
+        >Inicio
+      </a>
     </li>
-    <li><a class="pl-12" routerLink="products">Productos</a></li>
+    <li><a class="pl-12 text-color" routerLink="products">Productos</a></li>
+    <li><a class="pl-12 text-color" routerLink="add-product">Añadir </a></li>
   </ol>
-  <h1 class="text-4xl font-bold italic" routerLink="home">HenryStore</h1>
+  <h1 class="text-4xl font-bold italic"><a routerLink="home">HenryStore</a></h1>
   <ol class="flex">
-    <li><a class="pr-12" routerLink="login">Iniciar Sesión</a></li>
+    <li><a class="pr-12 text-color" routerLink="singup">Regístrate</a></li>
+    <li><a class="pr-12 text-color" routerLink="login">Iniciar </a></li>
 
-    <li><a class="pr-12">Cerrar Sesión</a></li>
+    <li><a class="pr-12 text-color">Cerrar Sesión</a></li>
   </ol>
 </div>

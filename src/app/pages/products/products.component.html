@@ -1,7 +1,26 @@
-<div>
-  <div>
-    <div class="card">
-      <img src="" alt="" />
+<div class="w-full h-auto mt-8 flex justify-center items-center">
+  <div
+    class="w-fit grid grid-cols-2 gap-5 p-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
+  >
+    <div
+      id="card"
+      class="w-48 h-80 bg-background rounded-lg px-4 py-2"
+      *ngFor="let product of products"
+    >
+      <h3 class="text-center font-bold bg-center product-image mb-2">
+        {{ product.name | titlecase }}
+      </h3>
+      <div
+        class="w-40 h-40 bg-center bg-cover rounded mb-2"
+        style="background-image: url({{
+          product.photo
+        }});background-size: cover"
+      ></div>
+      <p>
+        <span class="mb-2"> {{ product.price | currency }} </span>
+      </p>
+      <p class="mb-2">{{ product.description }}</p>
+      <button class="button-text w-full rounded-xl">Detalles</button>
     </div>
   </div>
 </div>

@@ -1,5 +1,6 @@
 import { Inject, Injectable } from '@angular/core';
-import {Auth, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
+import {Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut} from '@angular/fire/auth'
+
 
 
 @Injectable({
@@ -8,7 +9,7 @@ import {Auth, signOut, createUserWithEmailAndPassword, signInWithEmailAndPasswor
 export class LoginService {
 
 
-  constructor( @Inject(String) private auth:Auth) { }
+  constructor( private auth:Auth) { }
 
   registerUser({email, password}:any){
     console.log(email,password)
